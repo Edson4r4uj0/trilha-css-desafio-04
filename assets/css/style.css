@@ -1,0 +1,104 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body {
+	max-width: 100vw;
+	background: #5625f7;
+	color: #23272A;
+	font: 400 1rem/1.3625rem 'Open Sans';
+}
+
+figure {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+img {max-width: 100%;}
+
+header {
+	height: 5rem;
+	width: 90%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+	padding: 0.4375rem 1rem;
+	border-radius: 1.118653125rem;
+}
+
+button:hover {box-shadow: 0 8px 15px rgba(0,0,0,.2);}
+
+button.black {
+	background: #23272a;
+	color: #FFF;
+}
+
+button.black:hover {
+	background: #313338;
+}
+
+button.white:hover {color: #5865f2;}
+
+main {
+	background: #FFF;
+}
+
+main, section, section span, section div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section {padding: 2.5rem 1.5rem;}
+
+section div {gap: 1rem;}
+
+section, section span {gap: 1.6875rem;}
+
+h1 {font: 2rem 'Luckiest Guy';}
+
+h2 {font: 800 1.5rem/2.04375rem 'Open Sans';}
+
+#imagine {
+	height: 31.625rem;
+	padding: 4.34375rem 1.5rem;
+	background: url(/assets/images/section1.png) center center/auto 31.625rem;
+	color: white;
+	gap: 1.5rem;
+}
+
+#imagine button {
+	padding: 1rem 2rem;
+	border-radius: 1.75rem;
+}
+
+#tecnologia h2 {
+	font: 2rem/2rem 'Luckiest Guy';
+	text-transform: uppercase;
+}
+
+footer {
+	background: #23272A;
+	height: 8.75rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 430px) and (orientation: portrait) {
+	header a.hide {display: none;}
+}
+
+@media screen and (min-width: 431px) and (orientation: landscape) {
+	section div {flex-direction: row;}
+
+	section.row {flex-direction: row;}
+
+	section.row_reverse {flex-direction: row-reverse;}
+}
